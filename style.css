@@ -1,0 +1,78 @@
+body{
+    padding: 0;
+    background-color: rgb(93, 27, 155);
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.title{
+    display: flex;
+    background-color: white;
+    color: purple;
+    border-bottom: 2.5px solid purple;
+}
+
+.menu{
+    margin-right: 15px;
+    display: none;
+}
+
+@media (max-width:500px){
+    .head-img{
+        margin-top: 160px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .title ul li{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+}
+
+
+.title ul{
+    flex-direction: row;
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    margin-right: 15px;
+}
+
+.title ul li:hover{
+    background-color: plum;
+    color: antiquewhite;
+    padding: 5px;
+    transition: 0.3s;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px rgb(151, 137, 137);
+    cursor: pointer;
+}
+
+.beginning{
+    margin-left: 25px;
+    color: white;
+    height: 250px;
+}
+
+.beginning h1{
+    font-size: 55px;
+    color: plum;
+}
+
+.head-img{
+    width: 100%;
+    height: 900px;
+    border: 1.9px solid purple;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./assets/fast.jpg);
+    background-size: cover;
+}
